@@ -1,1 +1,1 @@
-module.exports = require ('./natureremo_sensor_cloud.js');  
+module.exports = require ('./natureremo_cloud_sensor.js');  
