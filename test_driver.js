@@ -1,8 +1,8 @@
-const MHZ19     = require('mh_z19');
-let   uart_path = "/dev/ttyS0";
+const NatureRemoSensor = require('natureremo_sensor_cloud');
+let   access_token     = "gagLNUEyEgNKPgvsyr0PvZ3vZLGgmhsiSzZprnjrHPY.6YA1fdN5oVsNPMETkQNsnjx5yTHc0yj9h2148T5sdIk";
 
-let mh_z19 = new MHZ19(uart_path, function(error, co2_level, stderr){
-  console.log (co2_level);
+let remo_sensor = new NatureRemoSensor(access_token, {mo: false}, function (error, value, stderr) {
+  console.log (value);
   console.log (error);
   console.log (stderr);
 });
