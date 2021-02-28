@@ -1,6 +1,6 @@
 {
-  "name": "natureremo-cloud_sensor",
-  "version": "0.1.0",
+  "name": "natureremo_cloud_sensor",
+  "version": "0.1.1",
   "description": "",
   "main": "index.js",
   "dependencies": {},
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mizuka-ninomae/natureremo_sensor_cloud.git"
+    "url": "git+https://github.com/mizuka-ninomae/natureremor_cloud_senso.git"
   },
   "keywords": [
     "Nature",
@@ -20,7 +20,7 @@
   "author": "mizuka-ninomae",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mizuka-ninomae/natureremo_sensor_cloud/issues"
+    "url": "https://github.com/mizuka-ninomae/natureremo_cloud_sensor/issues"
   },
-  "homepage": "https://github.com/mizuka-ninomae/natureremo_sensor_cloud#readme"
+  "homepage": "https://github.com/mizuka-ninomae/natureremo_cloud_sensor#readme"
 }
