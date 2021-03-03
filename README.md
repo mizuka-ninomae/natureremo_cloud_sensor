@@ -8,6 +8,10 @@ Nature Remoシリーズの温度計、湿度計、照度計、モーションセ
 
 `node natureremo_cloud_sensor <access_token(1stArgument[Required]) device_name(2ndArgument[Optional])>`
 
+access_tokenはNatureRemo公式HPのトークン発行ページより入手可能です。（access_token can be obtained from the token issuance page of Nature Remo official website.）
+* 公式HP（official website）https://developer.nature.global/ 
+* access token発行ページ（access token issuing site）https://home.nature.global/
+* 
 <p align="center">
   <img src="img/device_name.png" width="300">
 </p>
