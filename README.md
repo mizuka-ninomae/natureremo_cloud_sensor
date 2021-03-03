@@ -8,6 +8,15 @@ Nature Remoシリーズの温度計、湿度計、照度計、モーションセ
 
 `node natureremo_cloud_sensor <access_token(1stArgument[Required]) device_name(2ndArgument[Optional])>`
 
+<p align="center">
+  <img src="img/device_name.png" width="300">
+</p>
+
+* デバイス名については、NatureRemoが１台しか無い場合は省略可能です。
+
+*デバイス名にSpaceが含まれる場合、指定できません。
+
+
 ### 特徴・要件
 
 * `carl` が必要です。（`carl` required）
