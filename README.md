@@ -6,7 +6,7 @@
 
 Nature Remoシリーズの温度計、湿度計、照度計、モーションセンサーで各値を測定するプログラムです。（This is a program for measuring each value with a Nature Remo series thermometer, hygrometer, Illuminance meter, and motion sensor.）
 
-`node natureremo_cloud_sensor <access_token(FirstArgument[Required]) device_name(SecondArgument[Optional])>`
+`node natureremo_cloud_sensor <access_token(1stArgument[Required]) device_name(2ndArgument[Optional])>`
 
 ### 特徴・要件
 
