@@ -13,7 +13,7 @@ Nature Remoシリーズの温度計、湿度計、照度計、モーションセ
 </p>
 
 * デバイス名については、NatureRemoが１台しか無い場合は省略可能です。（The device name can be omitted if there is only one Nature Remo.）
-* デバイス名にSpaceが含まれる場合、指定できません。
+* デバイス名にSpaceが含まれる場合、指定できません。（Cannot be specified if the device name contains Space.）
 
 ### 特徴・要件
 
