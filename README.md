@@ -22,3 +22,13 @@ Nature Remoシリーズの温度計、湿度計、照度計、モーションセ
 
 ここに書いてある事はわたしがテストした環境であり、動作を保証するものではありません。（What is written here is the environment I tested, and I do not guarantee the operation.）
 もしかしたら他の環境でも動くかもしれません。
+
+＊注意
+Nature Remo Cloud APIは5分以内に30回以上のリクエストを受けるとその後ステータスコード『429』を返すようになります。
+
+*caution
+The Nature Remo Cloud API will return status code "429" after receiving 30 or more requests within 5 minutes.
+
+## 最後に（Finally）
+
+I can't speak English, so I use Google Translate for everything. I'm sorry if there is a rude wording.
