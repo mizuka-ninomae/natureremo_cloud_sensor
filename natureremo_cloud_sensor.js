@@ -1,13 +1,20 @@
-const exec = require ("child_process").exec;
-let   url  = `"https://api.nature.global/1/devices"`;
-let   num  = null;
+const Request = require ("request");
+let   num     = null;
 let   te_val, hu_val, li_val, mo_val;
 
 class NatureRemoSensor {
   constructor (access_token, dev_name, callback) {
-    let cmd = `curl -X GET ${url} -H "accept":"application/json" -k --header "Authorization":"Bearer ${access_token}"`;
-    exec (cmd, function (error, stdout, stderr) {
-      let obj   = JSON.parse (stdout);
+    const options = {
+      url: `https://api.nature.global/1/devices`,
+      method: `GET`,
+      headers: {
+        Accept: `application/json`,
+        Authorization: `Bearer ${access_token}`
+      }
+    }
+
+    Request (options, function (error, response, body) {
+      let obj   = JSON.parse (body);
       if (dev_name == null) {
         num = 0;
       }
@@ -23,7 +30,7 @@ class NatureRemoSensor {
         throw new Error('Device Name not found')
       }
       else {
-        if (obj[num].firmware_version.startsWith("Remo-mini")) {
+        if (obj[num].firmware_version.startsWith ("Remo-mini")) {
           te_val = obj[num].newest_events.te.val;
           hu_val = null;
           li_val = null;
@@ -36,7 +43,7 @@ class NatureRemoSensor {
           mo_val = obj[num].newest_events.mo.val;
         }
         let value = {te: te_val, hu: hu_val, li: li_val, mo: mo_val};
-        callback (error, value, stderr)
+        callback (error, value, response)
         return;
       }
     })
@@ -44,10 +51,10 @@ class NatureRemoSensor {
 }
 
 if (require.main === module) {
-  new NatureRemoSensor (process.argv[2], process.argv[3], function(error, value, stderr) {
-    console.log (value);
+  new NatureRemoSensor (process.argv[2], process.argv[3], function (error, value, response) {
     console.log (error);
-    console.log (stderr);
+//    console.log (response);
+    console.log (value);
   });
 }
 else {
